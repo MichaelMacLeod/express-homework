@@ -1,0 +1,7 @@
+<%= recordStore %>
+
+<h1>Record Store</h1>
+
+<%  for (var i = 0; i < recordStore.records.length; i++) { %>
+  <p><a href="/records/<%= i+1 %>"><%= recordStore.records[i].album %></a> - <%= recordStore.records[i].artist %></p>
+<% } %> 
