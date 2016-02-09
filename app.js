@@ -1,10 +1,6 @@
 var express = require('express');
 var app = express();
-var RecordStore = require('./models/record_store.js');
-
-var express        = require('express');
-var app            = express();
-var recordStore    = require('./models/record_store.js');
+var recordStore = require('./models/record_store.js');
 var expressLayouts = require('express-ejs-layouts');
 
 //application settings
@@ -28,7 +24,7 @@ app.get('/records/:id', function(req, res){
 
 
 
-
+//Find index: 
 app.get('/', function(req, res) {
   res.render('index', { welcome: "Welcome to the Record Store" });
 });
