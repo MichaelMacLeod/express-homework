@@ -1,5 +1,5 @@
 var RecordStore = {
-  "albums": [
+  "records": [
   {
     "album": "Brave Gravity",
     "artist": "Jetplane Landing"
