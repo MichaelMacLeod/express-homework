@@ -19,8 +19,8 @@ recordRouter.post('/', function(req, res) {
   // CREATE
   var newRecord = {};
   newRecord.record = req.body.record;
-  newRecord.artist = parseInt(req.body.artist);
-  newRecord.album = parseInt(req.body.album);
+  newRecord.artist = req.body.artist;
+  newRecord.album = req.body.album;
   recordStore.records.push(newRecord);
   res.redirect('/');
 });
