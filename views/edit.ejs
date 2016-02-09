@@ -1,0 +1,9 @@
+<form action="/records/<%= id %>" method="post">
+  <label for="Album">Album:</label>
+  <input type="text" name="Album" value="<%= record.album %>">
+
+  <label for="artist">Artist</label>
+  <input type="text" name="Artist" value="<%= record.artist %>">
+
+  <input type="submit" value="Edit Record!">
+</form>
