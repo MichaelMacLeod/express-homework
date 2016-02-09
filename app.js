@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
-var recordStore = require('./models/record_store.js');
+var RecordStore = require('./models/record_store.js');
 var expressLayouts = require('express-ejs-layouts');
 
 //application settings
 app.set('views', './views');
 app.set('view engine', 'ejs');
 
-
-
+//Middleware: 
+app.use(expressLayouts);
 
 
 
