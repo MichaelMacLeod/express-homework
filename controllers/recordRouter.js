@@ -45,9 +45,11 @@ recordRouter.post('/:id', function(req, res) {
   // res.send("UPDATE record route " + recordStore.records[req.params.id-1].name);
 });
 
-recordRouter.post('/:id', function(req, res) {
+recordRouter.post('/:id/delete', function(req, res) {
   // DELETE
-  res.send("DELETE record " + recordStore.records[req.params.id-1].name);
+  recordStore.records.splice(req.params.id-1, 1);
+  //this takes our object from the array and deletes one element from it. 
+  res.redirect('/records');
 });
 
 module.exports = recordRouter
